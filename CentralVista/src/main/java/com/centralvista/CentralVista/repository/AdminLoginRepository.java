@@ -14,7 +14,8 @@ import com.centralvista.CentralVista.model.AdminLogin;
 @Repository
 @Qualifier("admRepo")
 public interface AdminLoginRepository extends JpaRepository<AdminLogin,Integer>{
-	@Query(value="select * from admin_login where email=:email and password=:password",nativeQuery=true)
+	@Query(value="select * from admin_login where email=:email and password=:password",
+			nativeQuery=true)
 	List<AdminLogin> findAllByEmailAndPassword (String email, String password);
 	
 }

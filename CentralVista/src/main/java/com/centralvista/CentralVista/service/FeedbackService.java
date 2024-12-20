@@ -6,8 +6,6 @@ import com.centralvista.CentralVista.model.Feedback;
 
 
 
-
-
 public interface FeedbackService {
 	Feedback insertrecord(Feedback r);
 	List<Feedback>getAll();
